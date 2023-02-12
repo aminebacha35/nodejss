@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home</title>
+</head>
+<body>
+  <div class="topnav">
+    <a  href="/">Home</a>
+    <a  href="/chat">Chat</a>
+    <a class="active" href="/profile">Profile</a>
+    <a href="/logout">Log out</a>
+  </div> 
+  <div class="title-p">
+<h1>Profile</h1>
+</div>
+<form class="update" method="POST" action="/profile">
+  <label>Change your email</label>
+  <input type="email" name="email"/>
+  <label>Change your Name</label>
+  <input type="text" name="name"/>
+  <button type="submit">Update</button>
+</form>
+
+<form class="delete" method="POST" action="/delete">
+  <input type="submit" value="Delete your account" />
+</form>
+</body>
+</html>
